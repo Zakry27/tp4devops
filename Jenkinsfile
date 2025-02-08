@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/Zakry27/tp4devops'
+        git branch: 'main', url: 'https://github.com/Zakry27/tp4devops'
       }
     }
     stage('Building image') {
